@@ -67,3 +67,8 @@ var r = a.splice(1,1,'ace','bug');
 // a = ["a", "ace", "bug", "c"]
 // r = ["b"]
 
+// to determine array
+var a = ['a', 'b', 'c'];
+if(a && typeof a==='object' && typeof a.length === 'number' && !(a.propertyIsEnumerable('length'))){
+	// true
+}
